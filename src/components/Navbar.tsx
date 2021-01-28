@@ -21,7 +21,7 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
     </>
   );
   return (
-    <Flex zIndex={1} position='sticky' top={0} bg='#03203C' p={4}>
+    <Flex zIndex={1} position='sticky' top={0} p={4}>
       {body}
     </Flex>
   );
