@@ -1,6 +1,6 @@
 import React from 'react';
 import NextLink from 'next/link';
-import { Flex, Link } from '@chakra-ui/react';
+import { Flex, Link, Text } from '@chakra-ui/react';
 
 interface NavbarProps {}
 
@@ -8,15 +8,19 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
   const body = (
     <>
       <NextLink href='/'>
-        <Link color='white'>Md Sadiq Sada</Link>
+        <Link ml='4vw' color='white'>
+          <Text fontSize='2xl'>Md Sadiq Sada</Text>
+        </Link>
       </NextLink>
       <NextLink href='/projects'>
         <Link color='white' mr={2} ml='auto'>
-          Projects
+          <Text fontSize='2xl'>Projects</Text>
         </Link>
       </NextLink>
       <NextLink href='/resume'>
-        <Link color='white'>Resume</Link>
+        <Link mr='5vw' color='white'>
+          <Text fontSize='2xl'>Resume</Text>
+        </Link>
       </NextLink>
     </>
   );

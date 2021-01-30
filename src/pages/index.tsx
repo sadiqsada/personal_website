@@ -6,7 +6,7 @@ import { Navbar } from '../components/Navbar';
 const Index = () => {
   return (
     <>
-      <Box w='100%' h='100vh' bgColor='#120E43'>
+      <Box w='100%' h='100vh' bgColor='#03203C'>
         <Navbar />
         <Text
           bgGradient='linear(to-r,gray.300,yellow.400,pink.200)'
