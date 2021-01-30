@@ -1,7 +1,7 @@
 import { Box, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
-import Image from 'next/image';
 import { Navbar } from '../components/Navbar';
+import { Tech } from '../components/Tech';
 
 const Index = () => {
   return (
@@ -45,49 +45,12 @@ const Index = () => {
         </Text>
         <br />
         <Stack ml='5vw' spacing={8} direction='row'>
-          <Box>
-            <Image src='/images/java.svg' alt='java' width='192' height='192' />
-          </Box>
-          <Box>
-            <Image
-              src='/images/react.png'
-              alt='react'
-              width='192'
-              height='192'
-            />
-          </Box>
-          <Box>
-            <Image
-              src='/images/typescript.png'
-              alt='typescript'
-              width='192'
-              height='192'
-            />
-          </Box>
-          <Box>
-            <Image
-              src='/images/node4.png'
-              alt='node'
-              width='192'
-              height='192'
-            />
-          </Box>
-          <Box>
-            <Image
-              src='/images/firebase.png'
-              alt='firebase'
-              width='192'
-              height='192'
-            />
-          </Box>
-          <Box>
-            <Image
-              src='/images/mongodb.png'
-              alt='mongodb'
-              width='192'
-              height='192'
-            />
-          </Box>
+          <Tech imageUrl='/images/java.svg' alt='java' />
+          <Tech imageUrl='/images/react.png' alt='react' />
+          <Tech imageUrl='/images/node4.png' alt='node' />
+          <Tech imageUrl='/images/firebase.png' alt='firebase' />
+          <Tech imageUrl='/images/typescript.png' alt='typescript' />
+          <Tech imageUrl='/images/mongodb.png' alt='mongodb' />
         </Stack>
       </Box>
     </>
