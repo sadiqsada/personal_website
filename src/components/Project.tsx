@@ -1,17 +1,23 @@
 import { ViewIcon } from '@chakra-ui/icons';
-import { Box, IconButton, Image } from '@chakra-ui/react';
+import { Box, IconButton, Image, Link } from '@chakra-ui/react';
 import React from 'react';
 
 interface ProjectProps {
   imageUrl: string;
   imageAlt: string;
   title: string;
+  projectUrl: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ imageUrl, imageAlt, title }) => {
+const Project: React.FC<ProjectProps> = ({
+  imageUrl,
+  imageAlt,
+  title,
+  projectUrl,
+}) => {
   return (
     <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
-      <Image w='100%' src={imageUrl} alt={imageAlt} />
+      <Image w='100%' h='200px' src={imageUrl} alt={imageAlt} />
       <Box p='6'>
         <Box
           fontWeight='semibold'
@@ -22,12 +28,14 @@ const Project: React.FC<ProjectProps> = ({ imageUrl, imageAlt, title }) => {
           alignItems='center'
         >
           {title}
-          <IconButton
-            colorScheme='red'
-            aria-label='See Demo'
-            size='lg'
-            icon={<ViewIcon />}
-          />
+          <Link href={projectUrl}>
+            <IconButton
+              colorScheme='red'
+              aria-label='See Demo'
+              size='lg'
+              icon={<ViewIcon />}
+            />
+          </Link>
         </Box>
       </Box>
     </Box>
