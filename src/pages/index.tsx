@@ -51,6 +51,7 @@ const Index = () => {
           <Tech imageUrl='/images/firebase.png' alt='firebase' />
           <Tech imageUrl='/images/typescript.png' alt='typescript' />
           <Tech imageUrl='/images/mongodb.png' alt='mongodb' />
+          <Box mr='5vw'></Box>
         </Stack>
       </Box>
     </>
