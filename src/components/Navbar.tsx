@@ -17,11 +17,11 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
           <Text fontSize='2xl'>Projects</Text>
         </Link>
       </NextLink>
-      <NextLink href='/resume'>
-        <Link mr='5vw' color='white'>
+      <a href='/resume.pdf'>
+        <Link color='white' mr={2} ml='auto'>
           <Text fontSize='2xl'>Resume</Text>
         </Link>
-      </NextLink>
+      </a>
     </>
   );
   return (

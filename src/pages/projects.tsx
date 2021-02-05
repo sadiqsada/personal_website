@@ -1,7 +1,7 @@
 import { Box, Grid, Text } from '@chakra-ui/react';
 import React from 'react';
 import { Navbar } from '../components/Navbar';
-import Project from '../components/project';
+import Project from '../components/Project';
 
 interface projectsProps {}
 
