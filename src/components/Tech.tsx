@@ -10,7 +10,7 @@ interface TechProps {
 export const Tech: React.FC<TechProps> = ({ imageUrl, alt }) => {
   return (
     <Box>
-      <Image src={imageUrl} alt={alt} width='192' height='192' />
+      <Image src={imageUrl} alt={alt} width='128' height='128' />
     </Box>
   );
 };

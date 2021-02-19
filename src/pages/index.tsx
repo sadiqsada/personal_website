@@ -2,9 +2,10 @@ import {
   Box,
   Fade,
   Flex,
+  Grid,
+  SimpleGrid,
   Stack,
   Text,
-  transition,
   useDisclosure,
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
@@ -17,10 +18,6 @@ const Index = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   useEffect(() => {
-    // const intervalID = setInterval(() => {
-    //   setCurrentState((currentState + 1) % 3);
-    // }, 1500);
-
     const transitionInterval = setInterval(() => {
       onToggle();
       setCurrentState((currentState + 1) % 3);
@@ -28,7 +25,6 @@ const Index = () => {
     }, 1000);
 
     return () => {
-      // clearInterval(intervalID);
       clearInterval(transitionInterval);
     };
   }, [isOpen]);
@@ -45,7 +41,13 @@ const Index = () => {
         >
           Hello 👋
         </Text>
-        <Flex align='center' maxW={800} margin='auto' justify='center'>
+        <Flex
+          align='center'
+          maxW={800}
+          margin='auto'
+          justify='center'
+          direction='column'
+        >
           <Text
             color='#0D0D0D'
             fontSize='3xl'
@@ -59,18 +61,25 @@ const Index = () => {
               </Fade>
             </span>
           </Text>
+          <Text
+            color='#0D0D0D'
+            fontSize='3xl'
+            align='center'
+            fontWeight='semibold'
+            mt={10}
+          >
+            Technologies I Use
+          </Text>
+          <Grid templateColumns='repeat(3,1fr)' gap={8} mt={8}>
+            <Tech imageUrl='/images/java.svg' alt='java' />
+            <Tech imageUrl='/images/react.png' alt='react' />
+            <Tech imageUrl='/images/node4.png' alt='node' />
+            <Tech imageUrl='/images/firebase.png' alt='firebase' />
+            <Tech imageUrl='/images/typescript.png' alt='typescript' />
+            <Tech imageUrl='/images/mongodb.png' alt='mongodb' />
+          </Grid>
         </Flex>
-        {/* <Text
-          bgGradient='#0D0D0D'
-          bgClip='text'
-          ml='5vw'
-          mr='5vw'
-          fontSize='5xl'
-          fontWeight='bold'
-        >
-          Technologies I Love
-        </Text>
-        <br /> */}
+
         {/* <Stack ml='5vw' spacing={8} direction='row'>
           <Tech imageUrl='/images/java.svg' alt='java' />
           <Tech imageUrl='/images/react.png' alt='react' />
