@@ -8,6 +8,7 @@ interface ProjectProps {
   title: string;
   description: string;
   projectUrl: string;
+  mobile: boolean;
 }
 
 const Project: React.FC<ProjectProps> = ({
@@ -16,6 +17,7 @@ const Project: React.FC<ProjectProps> = ({
   title,
   description,
   projectUrl,
+  mobile,
 }) => {
   return (
     <Box
@@ -26,7 +28,13 @@ const Project: React.FC<ProjectProps> = ({
       m={5}
       bg='white'
     >
-      <Image w='100%' h='50vh' src={imageUrl} alt={imageAlt} />
+      <Image
+        w={mobile ? '40%' : '100%'}
+        h='50vh'
+        src={imageUrl}
+        alt={imageAlt}
+        ml={mobile ? '30vh' : ''}
+      />
       <Box p='6'>
         <Box
           fontWeight='semibold'
