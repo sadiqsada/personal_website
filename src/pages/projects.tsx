@@ -18,7 +18,7 @@ const Projects: React.FC<projectsProps> = ({}) => {
           direction='column'
         >
           <Project
-            imageUrl='/images/projects/COVID Testing.png'
+            imageUrl='/images/projects/covid testing.gif'
             imageAlt='COVID Testing'
             title='COVID Testing'
             description='Covid Testing is a web application for tracking covid test results of employees within a company.'
