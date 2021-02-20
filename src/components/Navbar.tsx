@@ -25,6 +25,7 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
       bg='#0D0D0D'
       p={4}
       align='center'
+      mb={5}
     >
       <Flex flex={1} margin='auto' maxW={800} align='center'>
         <NextLink href='/'>
