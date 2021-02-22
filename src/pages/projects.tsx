@@ -23,7 +23,6 @@ const Projects: React.FC<projectsProps> = ({}) => {
             title='COVID Testing'
             description='Covid Testing is a web application for tracking covid test results of employees within a company.'
             projectUrl='https://github.com/alawngnome/COVID-testing'
-            mobile={false}
           />
           <Project
             imageUrl='/images/projects/pokeunbox.gif'
@@ -31,7 +30,6 @@ const Projects: React.FC<projectsProps> = ({}) => {
             title='PokeUnbox'
             description='PokeUnbox is a web application for generating and storing pokemon cards.'
             projectUrl='https://github.com/sadiqsada/pokeUnbox'
-            mobile={false}
           />
           <Project
             imageUrl='/images/projects/schedule builder.gif'
@@ -39,7 +37,6 @@ const Projects: React.FC<projectsProps> = ({}) => {
             title='Schedule Builder'
             description='Schedule Builder is a web appliaction for building school schedules.'
             projectUrl='https://github.com/sadiqsada/schedule-builder'
-            mobile={false}
           />
           <Project
             imageUrl='/images/projects/yelpcamp.png'
@@ -47,7 +44,7 @@ const Projects: React.FC<projectsProps> = ({}) => {
             title='YelpCamp'
             description='Yelpcamp is a web application for keeping track of the camps you have visited.'
             projectUrl='https://superyelpcamp.herokuapp.com/'
-            mobile={false}
+            live={true}
           />
           <Project
             imageUrl='/images/projects/guessingRGB.png'
@@ -55,7 +52,7 @@ const Projects: React.FC<projectsProps> = ({}) => {
             title='Guessing RGB'
             description='Guessing RGB is a color guessing game based on RGB color code.'
             projectUrl='https://supercolorgame.herokuapp.com/'
-            mobile={false}
+            live={true}
           />
           <Project
             imageUrl='/images/projects/workout planner.gif'

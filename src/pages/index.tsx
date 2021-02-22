@@ -1,13 +1,4 @@
-import {
-  Box,
-  Fade,
-  Flex,
-  Grid,
-  SimpleGrid,
-  Stack,
-  Text,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Box, Fade, Flex, Grid, Text, useDisclosure } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { Navbar } from '../components/Navbar';
 import { Tech } from '../components/Tech';
@@ -53,6 +44,7 @@ const Index = () => {
             fontSize='3xl'
             align='center'
             fontWeight='semibold'
+            mb={10}
           >
             I'm Sadiq, a{' '}
             <span>
@@ -66,7 +58,6 @@ const Index = () => {
             fontSize='3xl'
             align='center'
             fontWeight='semibold'
-            mt={10}
           >
             Technologies I Use
           </Text>
@@ -79,16 +70,6 @@ const Index = () => {
             <Tech imageUrl='/images/mongodb.png' alt='mongodb' />
           </Grid>
         </Flex>
-
-        {/* <Stack ml='5vw' spacing={8} direction='row'>
-          <Tech imageUrl='/images/java.svg' alt='java' />
-          <Tech imageUrl='/images/react.png' alt='react' />
-          <Tech imageUrl='/images/node4.png' alt='node' />
-          <Tech imageUrl='/images/firebase.png' alt='firebase' />
-          <Tech imageUrl='/images/typescript.png' alt='typescript' />
-          <Tech imageUrl='/images/mongodb.png' alt='mongodb' />
-          <Box mr='5vw'></Box>
-        </Stack> */}
       </Box>
     </>
   );

@@ -1,6 +1,6 @@
-import { Box, IconButton, Icon, Image, Link, Text } from '@chakra-ui/react';
+import { Box, Icon, Image, Link, Text } from '@chakra-ui/react';
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaGlobe } from 'react-icons/fa';
 
 interface ProjectProps {
   imageUrl: string;
@@ -8,7 +8,8 @@ interface ProjectProps {
   title: string;
   description: string;
   projectUrl: string;
-  mobile: boolean;
+  mobile?: boolean;
+  live?: boolean;
 }
 
 const Project: React.FC<ProjectProps> = ({
@@ -18,6 +19,7 @@ const Project: React.FC<ProjectProps> = ({
   description,
   projectUrl,
   mobile,
+  live,
 }) => {
   return (
     <Box
@@ -53,7 +55,11 @@ const Project: React.FC<ProjectProps> = ({
             {title}
           </Text>
           <Link isExternal href={projectUrl}>
-            <Icon boxSize='1.5em' as={FaGithub} />
+            {live ? (
+              <Icon boxSize='1.5em' as={FaGlobe} />
+            ) : (
+              <Icon boxSize='1.5em' as={FaGithub} />
+            )}
           </Link>
         </Box>
         <Text color='#0D0D0D' fontSize='2xl'>
