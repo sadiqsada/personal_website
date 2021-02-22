@@ -44,15 +44,20 @@ const Index = () => {
             fontSize='3xl'
             align='center'
             fontWeight='semibold'
-            mb={10}
           >
-            I'm Sadiq, a{' '}
-            <span>
-              <Fade in={isOpen}>
-                <Text fontWeight='bold'>{statuses[currentState]}</Text>
-              </Fade>
-            </span>
+            I'm Sadiq, a
           </Text>
+          <Fade in={isOpen}>
+            <Text
+              color='#0D0D0D'
+              fontSize='3xl'
+              align='center'
+              fontWeight='bold'
+              mb={10}
+            >
+              {statuses[currentState]}
+            </Text>
+          </Fade>
           <Text
             color='#0D0D0D'
             fontSize='3xl'
