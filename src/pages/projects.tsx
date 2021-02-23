@@ -39,7 +39,7 @@ const Projects: React.FC<projectsProps> = ({}) => {
             projectUrl='https://github.com/sadiqsada/schedule-builder'
           />
           <Project
-            imageUrl='/images/projects/yelpcamp.png'
+            imageUrl='/images/projects/yelpcamp.gif'
             imageAlt='YelpCamp'
             title='YelpCamp'
             description='Yelpcamp is a web application for keeping track of the camps you have visited.'
@@ -47,7 +47,7 @@ const Projects: React.FC<projectsProps> = ({}) => {
             live={true}
           />
           <Project
-            imageUrl='/images/projects/guessingRGB.png'
+            imageUrl='/images/projects/guessinggame.gif'
             imageAlt='guessingRGB'
             title='Guessing RGB'
             description='Guessing RGB is a color guessing game based on RGB color code.'
