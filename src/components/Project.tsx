@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({
     >
       <Image
         w={mobile ? '40%' : '100%'}
-        h='50vh'
+        h={{ base: '30vh', md: '50vh', lg: '50vh' }}
         src={imageUrl}
         alt={imageAlt}
         ml={mobile ? '30vh' : ''}
@@ -49,20 +49,26 @@ const Project: React.FC<ProjectProps> = ({
           <Text
             align='center'
             color='#0D0D0D'
-            fontSize='3xl'
+            fontSize={{ base: '2xl', md: '3xl', lg: '3xl' }}
             fontWeight='extrabold'
           >
             {title}
           </Text>
           <Link isExternal href={projectUrl}>
             {live ? (
-              <Icon boxSize='1.5em' as={FaGlobe} />
+              <Icon
+                boxSize={{ base: '1.2em', md: '1.5em', lg: '1.5em' }}
+                as={FaGlobe}
+              />
             ) : (
-              <Icon boxSize='1.5em' as={FaGithub} />
+              <Icon
+                boxSize={{ base: '1.2em', md: '1.5em', lg: '1.5em' }}
+                as={FaGithub}
+              />
             )}
           </Link>
         </Box>
-        <Text color='#0D0D0D' fontSize='2xl'>
+        <Text color='#0D0D0D' fontSize={{ base: '1xl', md: '2xl', lg: '2xl' }}>
           {description}
         </Text>
       </Box>
