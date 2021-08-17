@@ -2,4 +2,4 @@
 
 ## Introduction
 
-This is my personal portfolio website: http://sadiqsada.live
+This is my personal portfolio website: https://sadiqsada.live
