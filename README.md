@@ -2,4 +2,4 @@
 
 ## Introduction
 
-This is my personal portfolio website: https://personal-website-sadiqsada.vercel.app/
+This is my personal portfolio website: sadiqsada.live
